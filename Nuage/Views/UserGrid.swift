@@ -68,6 +68,8 @@ struct UserItem: View {
             }
             .foregroundColor(.secondary)
         }
+        .frame(width: 120)
+        .contentShape(Rectangle())
     }
 
 }

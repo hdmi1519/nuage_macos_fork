@@ -39,27 +39,60 @@ struct InfiniteList<Element: Decodable&Identifiable&Filterable&Hashable, Row: Vi
     @ViewBuilder func list(for elements: [Element], getNextPage: @escaping () -> ()) -> some View {
         let displayedElements = (filter.count > 0) ? elements.filter { $0.contains(filter) } : elements
         
-        VStack {
+        VStack(spacing: 0) {
             if isSearching {
-                TextField("Filter", text: $filter)
-                    .onChange(of: filter, perform: { _ in
-                        getNextPage()
-                    })
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .introspectTextField { $0.becomeFirstResponder() }
-                    .onExitCommand(perform: stopFiltering)
+                HStack(spacing: 6) {
+                    Image(systemName: "line.3.horizontal.decrease")
+                        .font(.system(size: 11, weight: .medium))
+                        .foregroundColor(.secondary)
+                    
+                    TextField(LocalizedStringKey("menu.filter"), text: $filter)
+                        .textFieldStyle(.plain)
+                        .font(.system(size: 12.5))
+                        .onChange(of: filter, perform: { _ in
+                            getNextPage()
+                        })
+                        .introspectTextField { field in
+                            field.focusRingType = .none
+                            if field.window?.firstResponder != field {
+                                field.becomeFirstResponder()
+                            }
+                        }
+                    
+                    if !filter.isEmpty {
+                        Button {
+                            filter = ""
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 11))
+                                .foregroundColor(.secondary)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                .padding(.horizontal, 10)
+                .padding(.vertical, 6)
+                .background(
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .fill(Color.primary.opacity(0.08))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .stroke(Color.primary.opacity(0.18), lineWidth: 1)
+                )
+                .padding(.horizontal, 12)
+                .padding(.top, 8)
+                .padding(.bottom, 6)
+                .transition(.opacity.combined(with: .move(edge: .top)))
+                .onExitCommand(perform: stopFiltering)
             }
             ScrollView {
-                LazyVStack(alignment: .leading, spacing: 0) {
+                LazyVStack(alignment: .leading, spacing: 3) {
                     ForEach(0..<displayedElements.count+1, id: \.self) {idx in
                         if idx == 0 {
                             header
                         }
                         else {
-                            Spacer()
-                                .frame(height: 16)
-                            
                             row(displayedElements[idx-1])
                                 .id(idx)
                                 .onAppear {
@@ -67,23 +100,33 @@ struct InfiniteList<Element: Decodable&Identifiable&Filterable&Hashable, Row: Vi
                                         getNextPage()
                                     }
                                 }
-                            
-                            Spacer()
-                                .frame(height: 8)
-                            Divider()
                         }
                     }
                 }
-                .padding(.horizontal)
+                .padding(.top, 10)
+                .padding(.bottom, 16)
+                .padding(.horizontal, 8)
+            }
+            .introspectScrollView { scrollView in
+                scrollView.scrollerStyle = .overlay
+                scrollView.verticalScroller?.controlSize = .small
             }
             .playbackContext(displayedElements)
-            .onReceive(commands.filter) { withAnimation { isSearching = true } }
+            .onReceive(commands.filter) {
+                withAnimation(.easeInOut(duration: 0.2)) {
+                    if isSearching {
+                        stopFiltering()
+                    } else {
+                        isSearching = true
+                    }
+                }
+            }
             .onExitCommand(perform: stopFiltering)
         }
     }
     
     private func stopFiltering() {
-        withAnimation {
+        withAnimation(.easeInOut(duration: 0.18)) {
             isSearching = false
             filter = ""
         }

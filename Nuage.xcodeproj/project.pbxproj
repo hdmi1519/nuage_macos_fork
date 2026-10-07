@@ -33,14 +33,31 @@
 		4969F436257CFB100048E29B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F41B257CFB100048E29B /* MainView.swift */; };
 		4969F437257CFB100048E29B /* UserGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F41C257CFB100048E29B /* UserGrid.swift */; };
 		497F43B228F757DA0090CAD6 /* WaveformSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497F43B128F757DA0090CAD6 /* WaveformSlider.swift */; };
+		49A10008257CFB100048E29B /* PlaylistDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A10007257CFB100048E29B /* PlaylistDetail.swift */; };
+		49A1000A257CFB100048E29B /* PlaylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A10009257CFB100048E29B /* PlaylistsView.swift */; };
 		4980FD2325CD6333004640D5 /* InfiniteGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980FD2225CD6333004640D5 /* InfiniteGrid.swift */; };
 		4980FD4025CD704E004640D5 /* GridStack in Frameworks */ = {isa = PBXBuildFile; productRef = 4980FD3F25CD704E004640D5 /* GridStack */; };
 		498286F825969AE800147DBE /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 498286F725969AE800147DBE /* Introspect */; };
 		4988D84625A1C62E0092BAFF /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4988D84525A1C62E0092BAFF /* UserDetail.swift */; };
 		498C72F32A790AF300AA1AAF /* StatsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C72F22A790AF300AA1AAF /* StatsStack.swift */; };
 		4998E12125CADC8300EB986F /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4998E12025CADC8300EB986F /* Artwork.swift */; };
-		D15C0BE100000001000000DC /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE200000001000000DC /* DiscoverView.swift */; };
 		4999998D25B0886700F42D9B /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999998C25B0886700F42D9B /* WaveformView.swift */; };
+		49A10002257CFB100048E29B /* GeniusLyricsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A10001257CFB100048E29B /* GeniusLyricsService.swift */; };
+		49A10004257CFB100048E29B /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A10003257CFB100048E29B /* NowPlayingView.swift */; };
+		49A10006257CFB100048E29B /* ModernProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A10005257CFB100048E29B /* ModernProgressBar.swift */; };
+		49A1000C257CFB100048E29B /* FullscreenNowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1000B257CFB100048E29B /* FullscreenNowPlayingView.swift */; };
+		49A1000E257CFB100048E29B /* EqualizerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1000D257CFB100048E29B /* EqualizerService.swift */; };
+		49A10010257CFB100048E29B /* DiscordRPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1000F257CFB100048E29B /* DiscordRPCService.swift */; };
+		D15C0BE300000001000000FB /* WaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE300000001000000FA /* WaveService.swift */; };
+		D15C0BE300000002000000FB /* SoundCloudSocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE300000002000000FA /* SoundCloudSocialService.swift */; };
+		D15C0BE300000003000000FB /* NotificationsPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE300000003000000FA /* NotificationsPopover.swift */; };
+		D15C0BE300000004000000FB /* MessagesPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE300000004000000FA /* MessagesPopover.swift */; };
+		D15C0BE300000005000000FB /* ShareTrackSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE300000005000000FA /* ShareTrackSheet.swift */; };
+		D15C0BE300000006000000FB /* VoiceControlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE300000006000000FA /* VoiceControlService.swift */; };
+		D15C0BE300000007000000FB /* VoiceControlSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE300000007000000FA /* VoiceControlSettingsView.swift */; };
+		D15C0BE300000008000000FB /* VoiceControlHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE300000008000000FA /* VoiceControlHUDView.swift */; };
+		D15C0BE300000009000000FB /* UserAliasService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE300000009000000FA /* UserAliasService.swift */; };
+
 		49A89C032A5EA1B70019648F /* Likes.json in Resources */ = {isa = PBXBuildFile; fileRef = 49A89C022A5EA12D0019648F /* Likes.json */; };
 		49A99D7A2A7454EE001B8BCB /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A99D792A7454EE001B8BCB /* Navigation.swift */; };
 		49B154C525C4685D00CE9511 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 49B154C425C4685D00CE9511 /* URLImage */; };
@@ -50,6 +67,9 @@
 		49FA14BB2589635800CEF925 /* ArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA14BA2589635800CEF925 /* ArrayView.swift */; };
 		49FA14C62589693E00CEF925 /* InfiniteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA14C52589693E00CEF925 /* InfiniteList.swift */; };
 		49FEEBDF2A5B56C9002C8865 /* TouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FEEBDE2A5B56C9002C8865 /* TouchBar.swift */; };
+		D15C0BE100000001000000DC /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE200000001000000DC /* DiscoverView.swift */; };
+		D15C0BE100000001000000EA /* MyWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C0BE200000001000000EA /* MyWaveView.swift */; };
+		E0B032B33070689400E91E51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B032B23070689400E91E51 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +83,7 @@
 		493AB3542A6E668C00E20656 /* FeedbackStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackStack.swift; sourceTree = "<group>"; };
 		4964297A25DFCF04008AFBD5 /* CommentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentList.swift; sourceTree = "<group>"; };
 		4964299125E054E9008AFBD5 /* CommentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRow.swift; sourceTree = "<group>"; };
-		4969F3C5257CFA7F0048E29B /* Nuage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nuage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4969F3C5257CFA7F0048E29B /* SoundCloud (forked).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SoundCloud (forked).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4969F3C8257CFA7F0048E29B /* NuageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuageApp.swift; sourceTree = "<group>"; };
 		4969F3CC257CFA800048E29B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4969F3CF257CFA800048E29B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -86,8 +106,24 @@
 		4988D84525A1C62E0092BAFF /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 		498C72F22A790AF300AA1AAF /* StatsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsStack.swift; sourceTree = "<group>"; };
 		4998E12025CADC8300EB986F /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
-		D15C0BE200000001000000DC /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		4999998C25B0886700F42D9B /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		49A10001257CFB100048E29B /* GeniusLyricsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeniusLyricsService.swift; sourceTree = "<group>"; };
+		49A10003257CFB100048E29B /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
+		49A10005257CFB100048E29B /* ModernProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernProgressBar.swift; sourceTree = "<group>"; };
+		49A10007257CFB100048E29B /* PlaylistDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetail.swift; sourceTree = "<group>"; };
+		49A10009257CFB100048E29B /* PlaylistsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsView.swift; sourceTree = "<group>"; };
+		49A1000B257CFB100048E29B /* FullscreenNowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenNowPlayingView.swift; sourceTree = "<group>"; };
+		49A1000D257CFB100048E29B /* EqualizerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerService.swift; sourceTree = "<group>"; };
+		49A1000F257CFB100048E29B /* DiscordRPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordRPCService.swift; sourceTree = "<group>"; };
+		D15C0BE300000001000000FA /* WaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveService.swift; sourceTree = "<group>"; };
+		D15C0BE300000002000000FA /* SoundCloudSocialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCloudSocialService.swift; sourceTree = "<group>"; };
+		D15C0BE300000003000000FA /* NotificationsPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPopover.swift; sourceTree = "<group>"; };
+		D15C0BE300000004000000FA /* MessagesPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesPopover.swift; sourceTree = "<group>"; };
+		D15C0BE300000005000000FA /* ShareTrackSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareTrackSheet.swift; sourceTree = "<group>"; };
+		D15C0BE300000006000000FA /* VoiceControlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceControlService.swift; sourceTree = "<group>"; };
+		D15C0BE300000007000000FA /* VoiceControlSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceControlSettingsView.swift; sourceTree = "<group>"; };
+		D15C0BE300000008000000FA /* VoiceControlHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceControlHUDView.swift; sourceTree = "<group>"; };
+		D15C0BE300000009000000FA /* UserAliasService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAliasService.swift; sourceTree = "<group>"; };
 		49A89C022A5EA12D0019648F /* Likes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Likes.json; sourceTree = "<group>"; };
 		49A99D792A7454EE001B8BCB /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		49D0E7F62A7A4B7500F2351C /* PlaybackContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackContext.swift; sourceTree = "<group>"; };
@@ -96,6 +132,10 @@
 		49FA14BA2589635800CEF925 /* ArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayView.swift; sourceTree = "<group>"; };
 		49FA14C52589693E00CEF925 /* InfiniteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteList.swift; sourceTree = "<group>"; };
 		49FEEBDE2A5B56C9002C8865 /* TouchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBar.swift; sourceTree = "<group>"; };
+		D15C0BE200000001000000DC /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		D15C0BE200000001000000EA /* MyWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWaveView.swift; sourceTree = "<group>"; };
+		E0B032B13070689400E91E51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E0B032B43070689F00E91E51 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +178,7 @@
 				492AF078258F877E0079035F /* PostList.swift */,
 				49332BCE25962E910034A161 /* SearchList.swift */,
 				4964297A25DFCF04008AFBD5 /* CommentList.swift */,
+				49A10009257CFB100048E29B /* PlaylistsView.swift */,
 				49332BA925961A2A0034A161 /* Rows */,
 			);
 			path = Lists;
@@ -167,7 +208,7 @@
 		4969F3C6257CFA7F0048E29B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4969F3C5257CFA7F0048E29B /* Nuage.app */,
+				4969F3C5257CFA7F0048E29B /* SoundCloud (forked).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +216,7 @@
 		4969F3C7257CFA7F0048E29B /* Nuage */ = {
 			isa = PBXGroup;
 			children = (
+				E0B032B23070689400E91E51 /* Localizable.strings */,
 				4969F3C8257CFA7F0048E29B /* NuageApp.swift */,
 				49A99D792A7454EE001B8BCB /* Navigation.swift */,
 				4969F410257CFB100048E29B /* Views */,
@@ -203,6 +245,13 @@
 			children = (
 				4969F40E257CFB100048E29B /* Stream.swift */,
 				4969F40F257CFB100048E29B /* StreamPlayer.swift */,
+				49A10001257CFB100048E29B /* GeniusLyricsService.swift */,
+				49A1000D257CFB100048E29B /* EqualizerService.swift */,
+				49A1000F257CFB100048E29B /* DiscordRPCService.swift */,
+				D15C0BE300000001000000FA /* WaveService.swift */,
+				D15C0BE300000002000000FA /* SoundCloudSocialService.swift */,
+				D15C0BE300000006000000FA /* VoiceControlService.swift */,
+				D15C0BE300000009000000FA /* UserAliasService.swift */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -211,6 +260,14 @@
 			isa = PBXGroup;
 			children = (
 				4969F41B257CFB100048E29B /* MainView.swift */,
+				49A10003257CFB100048E29B /* NowPlayingView.swift */,
+				49A10005257CFB100048E29B /* ModernProgressBar.swift */,
+				49A1000B257CFB100048E29B /* FullscreenNowPlayingView.swift */,
+				D15C0BE300000003000000FA /* NotificationsPopover.swift */,
+				D15C0BE300000004000000FA /* MessagesPopover.swift */,
+				D15C0BE300000005000000FA /* ShareTrackSheet.swift */,
+				D15C0BE300000007000000FA /* VoiceControlSettingsView.swift */,
+				D15C0BE300000008000000FA /* VoiceControlHUDView.swift */,
 				492AF0CE258FC4A10079035F /* InfiniteView */,
 				49332BA025961A120034A161 /* Lists */,
 				49D761E42A7A82BC00735848 /* Details */,
@@ -225,6 +282,7 @@
 				49E6259C25BE1E7E005BEF8C /* WebView.swift */,
 				4998E12025CADC8300EB986F /* Artwork.swift */,
 				D15C0BE200000001000000DC /* DiscoverView.swift */,
+				D15C0BE200000001000000EA /* MyWaveView.swift */,
 				493AB3542A6E668C00E20656 /* FeedbackStack.swift */,
 				498C72F22A790AF300AA1AAF /* StatsStack.swift */,
 				49FEEBDE2A5B56C9002C8865 /* TouchBar.swift */,
@@ -236,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				4969F411257CFB100048E29B /* TrackDetail.swift */,
+				49A10007257CFB100048E29B /* PlaylistDetail.swift */,
 				49D761E22A7A7E6D00735848 /* URLDetail.swift */,
 				4988D84525A1C62E0092BAFF /* UserDetail.swift */,
 			);
@@ -267,7 +326,7 @@
 				4980FD3F25CD704E004640D5 /* GridStack */,
 			);
 			productName = Nuage;
-			productReference = 4969F3C5257CFA7F0048E29B /* Nuage.app */;
+			productReference = 4969F3C5257CFA7F0048E29B /* SoundCloud (forked).app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,6 +351,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 4969F3BC257CFA7F0048E29B;
 			packageReferences = (
@@ -314,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4969F3D0257CFA800048E29B /* Preview Assets.xcassets in Resources */,
+				E0B032B33070689400E91E51 /* Localizable.strings in Resources */,
 				49A89C032A5EA1B70019648F /* Likes.json in Resources */,
 				4969F3CD257CFA800048E29B /* Assets.xcassets in Resources */,
 			);
@@ -334,9 +395,26 @@
 				4969F42A257CFB100048E29B /* Stream.swift in Sources */,
 				49FEEBDF2A5B56C9002C8865 /* TouchBar.swift in Sources */,
 				4969F434257CFB100048E29B /* PlayerView.swift in Sources */,
+				49A10002257CFB100048E29B /* GeniusLyricsService.swift in Sources */,
+				49A10004257CFB100048E29B /* NowPlayingView.swift in Sources */,
+				49A10006257CFB100048E29B /* ModernProgressBar.swift in Sources */,
+				49A1000C257CFB100048E29B /* FullscreenNowPlayingView.swift in Sources */,
+				49A1000E257CFB100048E29B /* EqualizerService.swift in Sources */,
+				49A10010257CFB100048E29B /* DiscordRPCService.swift in Sources */,
+				D15C0BE300000001000000FB /* WaveService.swift in Sources */,
+				D15C0BE300000002000000FB /* SoundCloudSocialService.swift in Sources */,
+				D15C0BE300000003000000FB /* NotificationsPopover.swift in Sources */,
+				D15C0BE300000004000000FB /* MessagesPopover.swift in Sources */,
+				D15C0BE300000005000000FB /* ShareTrackSheet.swift in Sources */,
+				D15C0BE300000006000000FB /* VoiceControlService.swift in Sources */,
+				D15C0BE300000007000000FB /* VoiceControlSettingsView.swift in Sources */,
+				D15C0BE300000008000000FB /* VoiceControlHUDView.swift in Sources */,
+				D15C0BE300000009000000FB /* UserAliasService.swift in Sources */,
 				497F43B228F757DA0090CAD6 /* WaveformSlider.swift in Sources */,
 				4969F42B257CFB100048E29B /* StreamPlayer.swift in Sources */,
 				4969F42C257CFB100048E29B /* TrackDetail.swift in Sources */,
+				49A10008257CFB100048E29B /* PlaylistDetail.swift in Sources */,
+				49A1000A257CFB100048E29B /* PlaylistsView.swift in Sources */,
 				4969F437257CFB100048E29B /* UserGrid.swift in Sources */,
 				49D761E32A7A7E6D00735848 /* URLDetail.swift in Sources */,
 				493AB3552A6E668C00E20656 /* FeedbackStack.swift in Sources */,
@@ -355,6 +433,7 @@
 				4969F436257CFB100048E29B /* MainView.swift in Sources */,
 				4998E12125CADC8300EB986F /* Artwork.swift in Sources */,
 				D15C0BE100000001000000DC /* DiscoverView.swift in Sources */,
+				D15C0BE100000001000000EA /* MyWaveView.swift in Sources */,
 				4969F428257CFB100048E29B /* Helpers.swift in Sources */,
 				49FA14C62589693E00CEF925 /* InfiniteList.swift in Sources */,
 				490857292A718FFF002D4FD0 /* PostRow.swift in Sources */,
@@ -377,6 +456,18 @@
 			productRef = 49328ECC25C4B70F00A2A34D /* StackNavigationView */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0B032B23070689400E91E51 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0B032B13070689400E91E51 /* en */,
+				E0B032B43070689F00E91E51 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4969F3E9257CFA800048E29B /* Debug */ = {
@@ -435,6 +526,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -490,6 +582,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -510,16 +603,16 @@
 				DEVELOPMENT_ASSET_PATHS = "Nuage/Preview\\ Content Nuage/Preview\\ Content/Likes.json";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Nuage/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Nuage;
+				INFOPLIST_KEY_CFBundleDisplayName = "Nuage (Forked)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 0.0.9;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.laurinbrandner.nuage;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SoundCloud (forked)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -538,16 +631,16 @@
 				DEVELOPMENT_ASSET_PATHS = "Nuage/Preview\\ Content Nuage/Preview\\ Content/Likes.json";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Nuage/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Nuage;
+				INFOPLIST_KEY_CFBundleDisplayName = "Nuage (Forked)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 0.0.9;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.laurinbrandner.nuage;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SoundCloud (forked)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

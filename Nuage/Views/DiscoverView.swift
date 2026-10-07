@@ -5,6 +5,7 @@
 
 import SwiftUI
 import Combine
+import Introspect
 import SoundCloud
 
 struct DiscoverView: View {
@@ -25,6 +26,10 @@ struct DiscoverView: View {
                         }
                     }
                     .padding()
+                }
+                .introspectScrollView { scrollView in
+                    scrollView.scrollerStyle = .overlay
+                    scrollView.verticalScroller?.controlSize = .small
                 }
             }
         }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Combine
+import Introspect
 import SoundCloud
 
 private enum SearchSection: String {
@@ -17,63 +18,41 @@ private enum SearchSection: String {
 
 struct SearchList: View {
     
-    var publisher: AnyPublisher<Page<Some>, Error>
-    
-    private var userPublisher: AnyPublisher<[User], Error> {
-        publisher.map { page in
-            return page.collection.compactMap { elem in
-                switch elem {
-                case .user(let user): return user
-                default: return nil
-                }
-            }
-        }
-        .eraseToAnyPublisher()
-    }
-    
-    private var trackPublisher: AnyPublisher<[Track], Error> {
-        publisher.map { page in
-            return page.collection.compactMap { elem in
-                switch elem {
-                case .track(let track): return track
-                default: return nil
-                }
-            }
-        }
-        .eraseToAnyPublisher()
-    }
-    
-    private var playlistPublisher: AnyPublisher<[UserPlaylist], Error> {
-        publisher.map { page in
-            return page.collection.compactMap { elem in
-                switch elem {
-                case .userPlaylist(let playlist): return playlist
-                default: return nil
-                }
-            }
-        }
-        .eraseToAnyPublisher()
-    }
+    var query: String
     
     @State private var users = [User]()
     @State private var tracks = [Track]()
     @State private var playlists = [UserPlaylist]()
-    
+    @State private var isLoading = true
     @State private var subscriptions = Set<AnyCancellable>()
     
     var body: some View {
         Group {
-            if users.isEmpty && tracks.isEmpty && playlists.isEmpty {
+            if isLoading && users.isEmpty && tracks.isEmpty && playlists.isEmpty {
                 ProgressView()
                     .progressViewStyle(.circular)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
+            else if users.isEmpty && tracks.isEmpty && playlists.isEmpty {
+                Text(NSLocalizedString("menu.search", comment: ""))
+                    .foregroundColor(.secondary)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             else {
                 ScrollView {
-                    LazyVStack(alignment: .leading) {
+                    LazyVStack(alignment: .leading, spacing: 16) {
                         if !users.isEmpty {
                             Section(content: {
-                                HStack(alignment: .top) {
-                                    ForEach(users) { UserItem(user: $0) }
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    HStack(alignment: .top, spacing: 16) {
+                                        ForEach(users) { user in
+                                            NavigationLink(value: user) {
+                                                UserItem(user: user)
+                                            }
+                                            .buttonStyle(.plain)
+                                        }
+                                    }
+                                    .padding(.vertical, 4)
                                 }
                             }, header: header(for: .users), footer: footer)
                         }
@@ -101,39 +80,75 @@ struct SearchList: View {
                     }
                     .padding()
                 }
+                .introspectScrollView { scrollView in
+                    scrollView.scrollerStyle = .overlay
+                    scrollView.verticalScroller?.controlSize = .small
+                }
             }
         }
-        .navigationTitle("Search")
-        .onAppear {
-            userPublisher.replaceError(with: [])
-                .receive(on: RunLoop.main)
-                .assign(to: \.users, on: self)
-                .store(in: &subscriptions)
-            
-            trackPublisher.replaceError(with: [])
-                .receive(on: RunLoop.main)
-                .assign(to: \.tracks, on: self)
-                .store(in: &subscriptions)
-            
-            playlistPublisher.replaceError(with: [])
-                .receive(on: RunLoop.main)
-                .assign(to: \.playlists, on: self)
-                .store(in: &subscriptions)
+        .navigationTitle(NSLocalizedString("menu.search", comment: ""))
+        .task(id: query) {
+            await performSearch(for: query)
         }
+    }
+    
+    @MainActor
+    private func performSearch(for query: String) async {
+        let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else {
+            users = []
+            tracks = []
+            playlists = []
+            isLoading = false
+            return
+        }
+        
+        isLoading = true
+        // Debounce 250ms
+        do {
+            try await Task.sleep(nanoseconds: 250_000_000)
+        }
+        catch {
+            return
+        }
+        
+        subscriptions.removeAll()
+        SoundCloud.shared.get(.search(trimmed))
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { _ in
+                self.isLoading = false
+            }, receiveValue: { page in
+                var newUsers = [User]()
+                var newTracks = [Track]()
+                var newPlaylists = [UserPlaylist]()
+                for elem in page.collection {
+                    switch elem {
+                    case .user(let user): newUsers.append(user)
+                    case .track(let track): newTracks.append(track)
+                    case .userPlaylist(let playlist): newPlaylists.append(playlist)
+                    default: break
+                    }
+                }
+                self.users = newUsers
+                self.tracks = newTracks
+                self.playlists = newPlaylists
+                self.isLoading = false
+            })
+            .store(in: &subscriptions)
     }
     
     private func header(for section: SearchSection) -> () -> some View {
         @ViewBuilder func buildHeader() -> some View {
             Text(section.rawValue.capitalized)
-                .font(.title)
+                .font(.title2)
+                .bold()
         }
         return buildHeader
     }
     
     @ViewBuilder private func footer() -> some View {
-        Spacer(minLength: 20)
         Divider()
-        Spacer(minLength: 20)
+            .padding(.vertical, 8)
     }
     
 }

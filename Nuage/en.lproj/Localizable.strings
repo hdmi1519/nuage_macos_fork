@@ -1,0 +1,396 @@
+//
+//  Localizable.strings
+//  Nuage
+//
+//  Created by hdmi1519 on 03.10.2026.
+//
+/* Sidebar */
+"sidebar.discover" = "Home";
+"sidebar.stream" = "Stream";
+"sidebar.wave" = "My Wave";
+"sidebar.likes" = "Likes";
+"sidebar.reposts" = "Reposts";
+"sidebar.history" = "History";
+"sidebar.following" = "Following";
+"sidebar.playlists" = "Playlists";
+
+/* Menu */
+"menu.view" = "View";
+"menu.showComments" = "Show Comments";
+"menu.settings" = "Settings";
+"menu.settings.discordRPC" = "Discord Rich Presence";
+"equalizer.title" = "Equalizer";
+"menu.language" = "Language";
+"menu.filter" = "Filter";
+"menu.search" = "Search";
+"menu.refresh" = "Refresh";
+"menu.playlists" = "Playlists";
+"menu.playlists.showCreated" = "Show Created";
+"menu.playlists.showLiked" = "Show Liked";
+"menu.playback" = "Playback";
+"menu.play" = "Play";
+"menu.pause" = "Pause";
+"menu.shuffle" = "Shuffle";
+"menu.repeat" = "Repeat";
+"menu.volumeUp" = "Volume Up";
+"menu.volumeDown" = "Volume Down";
+"menu.next" = "Next";
+"menu.previous" = "Previous";
+"menu.seekForward" = "Seek Forward";
+"menu.seekBackward" = "Seek Backward";
+
+/* Context Menu */
+"context.play" = "Play";
+"context.addToQueue" = "Add to Queue";
+"context.startStation" = "Start Station";
+"context.goToArtist" = "Go to Artist";
+"context.like" = "Like";
+"context.unlike" = "Unlike";
+"context.repost" = "Repost";
+"context.unrepost" = "Unrepost";
+"context.addToPlaylist" = "Add to Playlist";
+"context.copyLink" = "Copy Link";
+
+/* Posts */
+"post.reposted" = "reposted";
+"post.posted" = "posted";
+
+/* Track Detail */
+"track.description.header" = "About this track";
+"track.comments.header" = "Comments";
+"track.comment.placeholder" = "Write a comment...";
+"track.comment.send" = "Send";
+"track.copyLink" = "Copy Link";
+"track.copied" = "Copied!";
+"track.single" = "TRACK";
+
+/* Profile & Popover */
+"profile.viewProfile" = "View Profile";
+"profile.logout" = "Log Out";
+"user.followers" = "followers";
+"user.following" = "following";
+"user.tracks" = "Tracks";
+"user.likes" = "Likes";
+"user.station" = "Station";
+
+/* Playlists */
+"playlists.title" = "Playlists";
+"playlists.all" = "All";
+"playlists.created" = "Created";
+"playlists.liked" = "Liked";
+"playlists.new" = "New Playlist";
+"playlists.create" = "Create";
+"playlists.edit" = "Edit";
+"playlists.delete" = "Delete";
+"playlists.deleteConfirm" = "Are you sure you want to delete this playlist? This action cannot be undone.";
+"playlists.cancel" = "Cancel";
+"playlists.save" = "Save";
+"playlists.namePlaceholder" = "Playlist title";
+"playlists.descriptionPlaceholder" = "Description (optional)";
+"playlists.public" = "Public";
+"playlists.private" = "Private";
+"playlists.empty" = "No Playlists";
+"playlists.emptyDescription" = "Create your first playlist or like playlists from other users";
+"playlists.playAll" = "Play";
+"playlists.shuffle" = "Shuffle";
+"playlists.tracksCount" = "tracks";
+"playlists.trackCountSingle" = "track";
+"playlists.removeFromPlaylist" = "Remove from Playlist";
+"playlist.badge" = "PLAYLIST";
+"playlist.album" = "ALBUM";
+"playlist.system" = "COLLECTION";
+"playlist.privateBadge" = "PRIVATE";
+"playlists.chooseArtwork" = "Choose Artwork";
+"playlists.changeArtwork" = "Change Artwork";
+"playlists.removeArtwork" = "Remove";
+"playlists.revertArtwork" = "Revert";
+
+/* Panel */
+"panel.close" = "Close panel";
+"panel.returnToPlaying" = "To playing track";
+"lyrics.title" = "Lyrics";
+"poster.title" = "Artwork";
+
+/* Queue */
+"queue.title" = "Playback Queue";
+"queue.nowPlaying" = "Now Playing";
+"queue.upNext" = "Up Next";
+"queue.previous" = "History";
+"queue.clearUpcoming" = "Clear";
+"queue.empty" = "Queue is empty";
+"queue.shuffled" = "Shuffled";
+
+/* Context Menu Extras */
+"context.lyrics" = "Lyrics";
+"context.poster" = "Track Artwork";
+"context.shareToFriend" = "Share with Friend...";
+
+/* Comments */
+"comments.reply" = "Reply";
+"comments.replyToUser" = "Reply to user";
+"comments.deleteComment" = "Delete comment";
+
+/* Share Sheet */
+"share.track" = "Share Track";
+"share.album" = "Share Album";
+"share.playlist" = "Share Playlist";
+"share.messagePlaceholder" = "Add a message (optional)...";
+"share.searchFriends" = "Search friends...";
+"share.noFriendsFound" = "No friends found";
+"share.sent" = "Sent";
+"share.send" = "Send";
+
+/* Duration Formats */
+"duration.hoursMinutes" = "%d hr %d min";
+"duration.minutes" = "%d min";
+
+/* Track Detail Extras */
+"track.share" = "Share";
+"track.replyTo" = "Replying to";
+"track.cancelReply" = "Cancel reply";
+"track.attachTimestamp" = "Attach timestamp to comment";
+"track.timestampAttached" = "Timestamp attached (click to detach)";
+"track.submitError" = "Error sending: %@";
+"track.deleteCommentError" = "Failed to delete comment: %@";
+"track.loadCommentsError" = "Failed to load comments: %@";
+"track.noCommentsYet" = "No comments yet. Be the first!";
+
+/* URL Detail */
+"url.openFailed" = "Failed to open link";
+"url.retry" = "Retry";
+
+/* User Detail Extras */
+"user.unfollow" = "Unfollow";
+"user.followingStatus" = "Following";
+"user.follow" = "Follow";
+"user.all" = "All";
+"user.popular" = "Popular";
+"user.tracksTab" = "Tracks";
+"user.albums" = "Albums";
+"user.followersTab" = "Followers";
+
+/* Notifications */
+"notifications.title" = "Notifications";
+"notifications.readAll" = "Read All";
+"notifications.empty" = "No notifications";
+"notifications.following" = "Following";
+"notifications.followBack" = "Follow back";
+"notifications.defaultUser" = "User";
+"notifications.mentionedYou" = " mentioned you:";
+"notifications.followedYou" = " followed you";
+"notifications.likedTrack" = " liked your track";
+"notifications.sharedTrack" = " reposted your track";
+"notifications.commented" = " left a comment:";
+"notifications.newAction" = " new action";
+
+/* Messages */
+"messages.title" = "Messages";
+"messages.empty" = "No messages";
+"messages.defaultPartner" = "User";
+"messages.setAlias" = "Set voice name (alias)";
+"messages.deleteChat" = "Delete chat";
+"messages.deleteChatConfirmTitle" = "Delete chat with %@?";
+"messages.noMessages" = "No messages";
+"messages.justNow" = "just now";
+"messages.minutesAgo" = "%dm ago";
+"messages.hoursAgo" = "%dh ago";
+"messages.daysAgo" = "%dd ago";
+"messages.back" = "Back";
+"messages.deleteConversation" = "Delete conversation";
+"messages.noMessagesYet" = "No messages here yet";
+"messages.typeMessage" = "Write a message...";
+"messages.delete" = "Delete";
+"messages.deleteConfirm" = "The conversation will be deleted from your messages.";
+"messages.voiceNameFor" = "Voice name for %@";
+"messages.voiceNameHint" = "Used for voice commands:\n'send to [name]', 'share with [name]'";
+"messages.enterNamePlaceholder" = "Enter name (e.g., Alex)...";
+"messages.clearName" = "Clear name";
+
+/* My Wave */
+"wave.tracksInStream" = "Tracks in stream";
+"wave.personalStream" = "Personal endless stream";
+"wave.description" = "Continuous music stream tailored to your taste based on likes. The stream never ends — upcoming tracks load automatically.";
+"wave.inspiredBy" = "Inspired by: %@";
+"wave.inspiredByAndMore" = "Inspired by: %@ and %d more artists";
+"wave.listenWave" = "Play Wave";
+"wave.pauseWave" = "Pause";
+"wave.refreshStream" = "Refresh stream";
+"wave.pickingTracks" = "Curating new tracks for the stream...";
+"wave.infiniteStreamHint" = "Infinite stream • New tracks load automatically as you listen";
+"wave.loadMore" = "Load more";
+"wave.tuningWave" = "Tuning My Wave to your taste...";
+"wave.noLikesYet" = "You don't have any liked tracks yet";
+"wave.noLikesHint" = "Like a few tracks so My Wave algorithm can learn your music taste.";
+
+/* Lyrics & Now Playing */
+"lyrics.notFound" = "Lyrics not found";
+"lyrics.notFoundDescription" = "There are no lyrics for this track on Genius yet.";
+"lyrics.tryAgain" = "Try again";
+"lyrics.originalWithLang" = "Original lyrics (%@)";
+"lyrics.translationWithLang" = "Translation to %@ from Genius";
+"lyrics.translationNotFound" = "Translation to %@ not found on Genius";
+"lyrics.openTranslationOnGenius" = "Open translation on Genius.com";
+"lyrics.openOnGenius" = "Open on Genius.com";
+"lyrics.loading" = "Loading lyrics from Genius...";
+"lyrics.sync" = "Sync";
+"nowPlaying.fullscreen" = "Open fullscreen";
+"fullscreen.close" = "Close (Esc)";
+
+/* Player Bar & Queue */
+"player.openPoster" = "Open track poster";
+"player.like" = "Like";
+"player.repost" = "Repost";
+"player.timedComments" = "Timed comments";
+"player.commentMarkers" = "Comment markers on progress bar";
+"player.leaveComment" = "Leave a comment on this track";
+"player.shareWithFriend" = "Share track with friend";
+"player.lyricsGenius" = "Lyrics (Genius)";
+"player.posterMode" = "Poster mode / Screenshots";
+"player.yourCommentPlaceholder" = "Your comment...";
+"player.repeatOff" = "Repeat off";
+"player.repeatAll" = "Repeat playlist";
+"player.repeatOne" = "Repeat one";
+"player.clickToJump" = "Click to jump to %@";
+"queue.removeFromQueue" = "Remove from queue";
+
+/* Voice Control & HUD */
+"voice.title" = "Voice Control";
+"voice.manage" = "Voice Control";
+"voice.realtimeNotice" = "Commands are recognized on Mac in real time";
+"voice.assistantName" = "Assistant name:";
+"voice.nameHint" = "Wake phrase before command (e.g. '%@ next')";
+"voice.resetNameHelp" = "Reset to default name (Sound)";
+"voice.requireWakeWord" = "Require wake word:";
+"voice.requireWakeWordHint" = "Only execute commands after speaking the assistant name ('%@ ...')";
+"voice.inputDevice" = "Input device:";
+"voice.defaultSystem" = "Default (System)";
+"voice.airPodsNotice" = "For best audio quality on Bluetooth headphones (AirPods), select a built-in or USB microphone so headphones don't switch to headset mode.";
+"voice.language" = "Command language:";
+"voice.hudHint" = "Heads-up display:";
+"voice.hudDescription" = "Capsule showing executed command above player";
+"voice.availableCommands" = "AVAILABLE COMMANDS";
+"voice.disable" = "Disable voice control";
+"voice.enable" = "Enable voice control";
+"voice.microphone" = "Microphone";
+"voice.settings" = "Voice control settings...";
+
+/* Voice Commands Table */
+"voice.cmd.next" = "Next track";
+"voice.cmd.prev" = "Previous track";
+"voice.cmd.pause" = "Pause / Stop";
+"voice.cmd.play" = "Playback";
+"voice.cmd.wave" = "My Wave";
+"voice.cmd.refreshWave" = "Refresh wave";
+"voice.cmd.findTrack" = "Search and play track";
+"voice.cmd.comment" = "Leave a comment";
+"voice.cmd.sendFriend" = "Send track to friend";
+"voice.cmd.playLikes" = "Play likes";
+"voice.cmd.playReposts" = "Play reposts";
+"voice.cmd.repost" = "Repost";
+"voice.cmd.unrepost" = "Remove repost";
+"voice.cmd.like" = "Like";
+"voice.cmd.unlike" = "Remove like";
+"voice.cmd.volumeUp" = "Louder";
+"voice.cmd.volumeDown" = "Quieter";
+"voice.cmd.mute" = "Mute";
+"voice.cmd.shuffle" = "Shuffle / Mix";
+"voice.cmd.repeat" = "Repeat mode";
+
+/* Voice HUD feedback */
+"voice.hud.nothingPlaying" = "Nothing is playing";
+"voice.hud.error" = "Error: %@";
+"voice.hud.sent" = "Sent: %@";
+"voice.hud.contactNotFound" = "Contact not found: %@";
+"voice.hud.commentError" = "Comment error";
+"voice.hud.commentAdded" = "Comment added";
+"voice.hud.commentPlaceholder" = "Comment...";
+"voice.hud.commentPreview" = "Comment: %@";
+"voice.hud.search" = "Search: %@";
+"voice.hud.searchPlaceholder" = "Search track...";
+"voice.hud.sharePlaceholder" = "Send to?...";
+"voice.hud.sharePreview" = "Send: %@";
+"voice.hud.cancelled" = "Cancelled";
+"voice.hud.listening" = "%@: Listening...";
+"voice.hud.shuffleOn" = "Shuffle on";
+"voice.hud.shuffleOff" = "Shuffle off";
+"voice.hud.repeatAll" = "Repeat all";
+"voice.hud.repeatOne" = "Repeat one";
+"voice.hud.repeatOff" = "Repeat off";
+
+/* Login View */
+"login.embeddedBrowser" = "Embedded Browser";
+"login.tokenInput" = "Token / Cookie Login (Captcha Bypass)";
+"login.openInBrowser" = "Open in Browser";
+"login.captchaNotice" = "If you see 'Access temporarily restricted' (DataDome captcha), switch to 'Token / Cookie Login' tab above.";
+"login.enterTokenButton" = "Enter Token";
+"login.title" = "Sign in to SoundCloud";
+"login.quickLogin" = "Fast Login without Captcha";
+"login.cloudflareExplanation" = "Since Cloudflare and DataDome protect against embedded webviews, you can log in with your regular Safari / Chrome and just paste your token.";
+"login.oauthTokenLabel" = "OAuth Token (oauth_token)";
+"login.oauthTokenPlaceholder" = "2-XXXXXX-XXXXXXXXXX-XXXXXXXXXXXX";
+"login.datadomeLabel" = "DataDome Cookie (datadome) — optional, for likes & reposts";
+"login.datadomePlaceholder" = "datadome cookie value...";
+"login.sessionLabel" = "Session Cookie (_soundcloud_session) — optional, for Go+";
+"login.sessionPlaceholder" = "_soundcloud_session cookie value...";
+"login.submitButton" = "Sign In";
+"login.enterTokenError" = "Please enter oauth_token";
+"login.openSafariButton" = "Open soundcloud.com in Safari";
+"login.guideTitle" = "How to copy your token in 10 seconds:";
+"login.guideStep1" = "1. Open **soundcloud.com** in Safari or Chrome and sign in to your account.";
+"login.guideStep2" = "2. Right-click anywhere on the page ➔ **Inspect Element / Inspect**.";
+"login.guideStep3" = "3. Go to the **Application** tab (or **Storage** in Safari) ➔ in the left menu select **Cookies** ➔ **https://soundcloud.com**.";
+"login.guideStep4" = "4. Find **oauth_token** and copy its value (starts with `2-`). Paste it in the field above.";
+"login.guideStep5" = "5. *(Optional)* Find **datadome** and copy it to bypass captcha on likes & reposts.";
+
+/* Common & Badges */
+"common.empty" = "Empty";
+"badge.new" = "NEW";
+
+/* Additional Message Keys */
+"messages.playlistOrAlbum" = "Playlist / Album";
+"messages.track" = "Track";
+
+/* Player Controls & HUD */
+"player.unmute" = "Unmute";
+"player.mute" = "Mute";
+"player.commentAtTime" = "At %@";
+"player.commentNoTime" = "No timestamp attached";
+"player.hud.trackUnavailable" = "Track unavailable";
+
+/* Additional Voice HUD & Commands */
+"voice.hud.nothingFound" = "Nothing found";
+"voice.hud.likedTracks" = "Liked tracks";
+"voice.hud.myWave" = "My Wave";
+"voice.hud.waveRefreshed" = "Wave refreshed";
+"voice.hud.stream" = "Stream";
+"voice.hud.shareFormat" = "Share: %@";
+"voice.hud.reposted" = "Reposted";
+"voice.hud.unreposted" = "Repost removed";
+"voice.hud.reposts" = "Reposts";
+"voice.hud.unliked" = "Like removed";
+"voice.hud.liked" = "Liked";
+"voice.hud.shuffle" = "Shuffle";
+"voice.hud.repeat" = "Repeat";
+
+/* Voice Command Examples in Settings */
+"voice.cmd.next.phrases" = "next, skip, forward";
+"voice.cmd.prev.phrases" = "back, previous, prev";
+"voice.cmd.pause.phrases" = "pause, stop";
+"voice.cmd.play.phrases" = "play, start, resume";
+"voice.cmd.wave.phrases" = "my wave, wave";
+"voice.cmd.refreshWave.phrases" = "refresh wave, reload wave";
+"voice.cmd.findTrack.phrases" = "find [track], search [track]";
+"voice.cmd.comment.phrases" = "comment [text]";
+"voice.cmd.sendFriend.phrases" = "send to Alex, share with Alex";
+"voice.cmd.playLikes.phrases" = "play likes, my likes";
+"voice.cmd.playReposts.phrases" = "play reposts, reposts";
+"voice.cmd.repost.phrases" = "repost, share";
+"voice.cmd.unrepost.phrases" = "unrepost, remove repost";
+"voice.cmd.like.phrases" = "like, favorite";
+"voice.cmd.unlike.phrases" = "unlike, remove like";
+"voice.cmd.volumeUp.phrases" = "louder, volume up";
+"voice.cmd.volumeDown.phrases" = "quieter, volume down";
+"voice.cmd.mute.phrases" = "mute, unmute, silence";
+"voice.cmd.shuffle.phrases" = "shuffle, mix, random";
+"voice.cmd.repeat.phrases" = "repeat, loop";
+

@@ -55,8 +55,11 @@ struct ArrayView<ID, Element: Decodable&Identifiable, ContentView: View>: View {
     }
     
     private func getNextPage() {
-        let range = elementRange.clamped(to: 0..<ids.count)
-        guard !ids.isEmpty && range.count > 0 else { return }
+        guard !ids.isEmpty else { return }
+        let clampedStart = max(0, min(elementRange.lowerBound, ids.count))
+        let clampedEnd = max(clampedStart, min(elementRange.upperBound, ids.count))
+        let range = clampedStart..<clampedEnd
+        guard range.count > 0 else { return }
         guard subscriptions[elements.count] == nil else { return }
         
         let page = Array(ids[range])
@@ -65,7 +68,9 @@ struct ArrayView<ID, Element: Decodable&Identifiable, ContentView: View>: View {
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { _ in }, receiveValue: { page in
                 elements.insert(contentsOf: page, at: range.startIndex)
-                elementRange = range.endIndex..<min(ids.count, range.endIndex+min(range.count*2, 50))
+                let nextStart = min(range.endIndex, ids.count)
+                let nextEnd = min(ids.count, nextStart + min(range.count * 2, 50))
+                elementRange = nextStart..<max(nextStart, nextEnd)
             })
             .store(in: &subscriptions, key: elements.count)
     }

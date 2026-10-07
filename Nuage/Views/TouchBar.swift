@@ -39,7 +39,8 @@ struct TouchBar: View {
     }
     
     @ViewBuilder private func progressSlider(for track: Track) -> some View {
-        let duration = TimeInterval(player.currentStream?.duration ?? 0)
+        let rawDuration = TimeInterval(player.currentStream?.duration ?? 0)
+        let duration = max(0.1, rawDuration)
         let font = Font.system(size: 14).monospacedDigit()
         
         WaveformSlider(url: track.waveformURL, value: $player.progress, in: 0...duration, minValueLabel: { progress in

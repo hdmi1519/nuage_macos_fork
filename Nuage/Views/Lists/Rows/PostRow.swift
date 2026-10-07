@@ -13,33 +13,31 @@ struct PostRow: View {
     
     var post: Post
     
-    @State private var subscriptions = Set<AnyCancellable>()
-    
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack(spacing: 10) {
+        VStack(alignment: .leading, spacing: 4) {
+            if post.isRepost {
                 NavigationLink(value: post.user) {
-                    RemoteImage(url: post.user.avatarURL, cornerRadius: 15)
-                        .frame(width: 30, height: 30)
-                    
-                    let title: AttributedString = {
-                        var attributes = AttributeContainer()
-                        attributes.font = .body.bold()
-                        attributes.foregroundColor = .primary
-                        let username = AttributedString(post.user.username, attributes: attributes)
+                    HStack(spacing: 6) {
+                        RemoteImage(url: post.user.avatarURL, cornerRadius: 10)
+                            .frame(width: 20, height: 20)
                         
-                        let action = post.isRepost ? " reposted" : " posted"
-                        attributes = AttributeContainer()
-                        attributes.foregroundColor = .secondary
-                        return username + AttributedString(action, attributes: attributes)
-                    }()
-                    
-                    Text(title)
+                        Image(systemName: "arrow.triangle.2.circlepath")
+                            .font(.system(size: 10, weight: .bold))
+                            .foregroundColor(.secondary)
+                        
+                        Text(post.user.username)
+                            .font(.system(size: 12, weight: .semibold))
+                            .foregroundColor(.primary)
+                        
+                        Text(LocalizedStringKey("post.reposted"))
+                            .font(.system(size: 12, weight: .regular))
+                            .foregroundColor(.secondary)
+                    }
                 }
                 .buttonStyle(.plain)
+                .padding(.leading, 8)
+                .padding(.top, 4)
             }
-            Spacer()
-                .frame(height: 18)
             
             if case let .track(track) = post.item {
                 TrackRow(track: track)
@@ -52,4 +50,3 @@ struct PostRow: View {
     }
     
 }
-

@@ -39,12 +39,14 @@ struct WaveformSlider<Value : BinaryFloatingPoint, MinValueLabel: View, MaxValue
         
         GeometryReader { geometry in
             let currentValue = updatingValue ?? value
-            let rangeWidth = range.upperBound - range.lowerBound
-            let relativeValue = rangeWidth > 0 ? CGFloat(currentValue/rangeWidth) : CGFloat(0)
-            let barValue = geometry.size.width * relativeValue
-            let knobValue = geometry.size.width * relativeValue - knobDiameter/2.0
+            let rangeWidth = max(Value(0.001), range.upperBound - range.lowerBound)
+            let relativeValue = max(0, min(1, CGFloat((currentValue - range.lowerBound) / rangeWidth)))
+            let availableWidth = max(0, geometry.size.width)
+            let barValue = availableWidth * relativeValue
+            let knobValue = availableWidth * relativeValue - knobDiameter/2.0
             
             let drag = DragGesture(minimumDistance: 0, coordinateSpace: .local).onChanged { gesture in
+                guard geometry.size.width > 0 else { return }
                 var newValue = Value(gesture.location.x/geometry.size.width) * rangeWidth + range.lowerBound
                 newValue = min(max(newValue, range.lowerBound), range.upperBound)
                 

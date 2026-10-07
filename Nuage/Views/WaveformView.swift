@@ -22,14 +22,17 @@ struct WaveformView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            let numberOfBars = CGFloat(geometry.size.width+spacing)/CGFloat(spacing+barWidth)
-            let samplesPerBar = floor(CGFloat(waveform.samples.count)/numberOfBars)
-            let bars = Array(0..<Int(numberOfBars))
+            let availableWidth = max(0, geometry.size.width)
+            let numberOfBars = floor(CGFloat(availableWidth + spacing) / CGFloat(spacing + barWidth))
+            let barCount = max(0, Int(numberOfBars))
+            let samplesPerBar = barCount > 0 ? floor(CGFloat(waveform.samples.count) / CGFloat(barCount)) : 0
+            let bars = barCount > 0 ? Array(0..<barCount)
                 .map { bar -> CGFloat in
-                    let idx = CGFloat(bar)*samplesPerBar
-                    let sample = interpolate(from: idx, to: idx+samplesPerBar)/CGFloat(waveform.maxHeight)
+                    guard samplesPerBar > 0 else { return 0 }
+                    let idx = CGFloat(bar) * samplesPerBar
+                    let sample = interpolate(from: idx, to: idx + samplesPerBar) / CGFloat(max(1, waveform.maxHeight))
                     return CGFloat(pow(sample, 3))
-                }
+                } : []
             let shouldScale = (self.waveform != emptyWaveform)
             let maxBar = bars.max() ?? 1.0
             
@@ -38,7 +41,7 @@ struct WaveformView: View {
                     let height = shouldScale ? (bar / maxBar) * geometry.size.height : bar
                     
                     Rectangle()
-                        .frame(width: barWidth, height: height)
+                        .frame(width: barWidth, height: max(0, height))
                         .cornerRadius(barWidth/2)
                 }
             }
@@ -60,12 +63,14 @@ struct WaveformView: View {
     }
     
     private func interpolate(from: CGFloat, to: CGFloat) -> CGFloat {
+        guard !waveform.samples.isEmpty else { return 0 }
         let lhs = max(Int(round(from)), 0)
-        let rhs = min(Int(round(to)), waveform.samples.count-1)
+        let rhs = min(Int(round(to)), waveform.samples.count - 1)
+        guard lhs <= rhs else { return 0 }
         let sum = waveform.samples[lhs...rhs].reduce(0, +)
-        let cnt = rhs-lhs+1
+        let cnt = rhs - lhs + 1
 
-        return CGFloat(sum)/CGFloat(cnt)
+        return CGFloat(sum) / CGFloat(cnt)
     }
     
 }

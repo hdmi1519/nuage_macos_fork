@@ -1,0 +1,396 @@
+//
+//  Localizable.strings
+//  Nuage
+//
+//  Created by hdmi1519 on 03.10.2026.
+//
+/* Sidebar */
+"sidebar.discover" = "Главная";
+"sidebar.stream" = "Лента";
+"sidebar.wave" = "Моя волна";
+"sidebar.likes" = "Понравившиеся";
+"sidebar.reposts" = "Репосты";
+"sidebar.history" = "История";
+"sidebar.following" = "Подписки";
+"sidebar.playlists" = "Плейлисты";
+
+/* Menu */
+"menu.view" = "Вид";
+"menu.showComments" = "Показывать комментарии";
+"menu.settings" = "Настройки";
+"menu.settings.discordRPC" = "Discord Rich Presence";
+"equalizer.title" = "Эквалайзер";
+"menu.language" = "Язык";
+"menu.filter" = "Фильтр";
+"menu.search" = "Поиск";
+"menu.refresh" = "Обновить";
+"menu.playlists" = "Плейлисты";
+"menu.playlists.showCreated" = "Показывать созданные";
+"menu.playlists.showLiked" = "Показывать понравившиеся";
+"menu.playback" = "Воспроизведение";
+"menu.play" = "Играть";
+"menu.pause" = "Пауза";
+"menu.shuffle" = "Перемешать";
+"menu.repeat" = "Повтор";
+"menu.volumeUp" = "Увеличить громкость";
+"menu.volumeDown" = "Уменьшить громкость";
+"menu.next" = "Следующий трек";
+"menu.previous" = "Предыдущий трек";
+"menu.seekForward" = "Перемотка вперед";
+"menu.seekBackward" = "Перемотка назад";
+
+/* Context Menu */
+"context.play" = "Играть";
+"context.addToQueue" = "В очередь";
+"context.startStation" = "Запустить радио";
+"context.goToArtist" = "Перейти к артисту";
+"context.like" = "Нравится";
+"context.unlike" = "Удалить из понравившихся";
+"context.repost" = "Репост";
+"context.unrepost" = "Отменить репост";
+"context.addToPlaylist" = "Добавить в плейлист";
+"context.copyLink" = "Скопировать ссылку";
+
+/* Posts */
+"post.reposted" = "сделал(а) репост";
+"post.posted" = "опубликовал(а)";
+
+/* Track Detail */
+"track.description.header" = "О треке";
+"track.comments.header" = "Комментарии";
+"track.comment.placeholder" = "Написать комментарий...";
+"track.comment.send" = "Отправить";
+"track.copyLink" = "Скопировать ссылку";
+"track.copied" = "Скопировано!";
+"track.single" = "ТРЕК";
+
+/* Profile & Popover */
+"profile.viewProfile" = "Перейти в профиль";
+"profile.logout" = "Выйти из аккаунта";
+"user.followers" = "подписчиков";
+"user.following" = "подписок";
+"user.tracks" = "Треки";
+"user.likes" = "Понравилось";
+"user.station" = "Станция";
+
+/* Playlists */
+"playlists.title" = "Плейлисты";
+"playlists.all" = "Все";
+"playlists.created" = "Созданные";
+"playlists.liked" = "Понравившиеся";
+"playlists.new" = "Новый плейлист";
+"playlists.create" = "Создать";
+"playlists.edit" = "Редактировать";
+"playlists.delete" = "Удалить";
+"playlists.deleteConfirm" = "Вы уверены, что хотите удалить этот плейлист? Это действие нельзя отменить.";
+"playlists.cancel" = "Отмена";
+"playlists.save" = "Сохранить";
+"playlists.namePlaceholder" = "Название плейлиста";
+"playlists.descriptionPlaceholder" = "Описание (необязательно)";
+"playlists.public" = "Публичный";
+"playlists.private" = "Приватный";
+"playlists.empty" = "Нет плейлистов";
+"playlists.emptyDescription" = "Создайте свой первый плейлист или лайкните плейлисты других пользователей";
+"playlists.playAll" = "Воспроизвести";
+"playlists.shuffle" = "Перемешать";
+"playlists.tracksCount" = "треков";
+"playlists.trackCountSingle" = "трек";
+"playlists.removeFromPlaylist" = "Удалить из плейлиста";
+"playlist.badge" = "ПЛЕЙЛИСТ";
+"playlist.album" = "АЛЬБОМ";
+"playlist.system" = "ПОДБОРКА";
+"playlist.privateBadge" = "ПРИВАТНЫЙ";
+"playlists.chooseArtwork" = "Выбрать обложку";
+"playlists.changeArtwork" = "Изменить обложку";
+"playlists.removeArtwork" = "Удалить";
+"playlists.revertArtwork" = "Сбросить";
+
+/* Panel */
+"panel.close" = "Закрыть панель";
+"panel.returnToPlaying" = "К играющему треку";
+"lyrics.title" = "Текст песни";
+"poster.title" = "Обложка";
+
+/* Queue */
+"queue.title" = "Очередь воспроизведения";
+"queue.nowPlaying" = "Сейчас играет";
+"queue.upNext" = "Далее";
+"queue.previous" = "Ранее играли";
+"queue.clearUpcoming" = "Очистить";
+"queue.empty" = "Очередь пуста";
+"queue.shuffled" = "В перемешку";
+
+/* Context Menu Extras */
+"context.lyrics" = "Текст песни";
+"context.poster" = "Обложка трека";
+"context.shareToFriend" = "Поделиться другу...";
+
+/* Comments */
+"comments.reply" = "Ответить";
+"comments.replyToUser" = "Ответить пользователю";
+"comments.deleteComment" = "Удалить комментарий";
+
+/* Share Sheet */
+"share.track" = "Поделиться треком";
+"share.album" = "Поделиться альбомом";
+"share.playlist" = "Поделиться плейлистом";
+"share.messagePlaceholder" = "Добавить сообщение (необязательно)...";
+"share.searchFriends" = "Поиск друзей...";
+"share.noFriendsFound" = "Друзья не найдены";
+"share.sent" = "Отправлено";
+"share.send" = "Отправить";
+
+/* Duration Formats */
+"duration.hoursMinutes" = "%d ч %d мин";
+"duration.minutes" = "%d мин";
+
+/* Track Detail Extras */
+"track.share" = "Поделиться";
+"track.replyTo" = "Ответ для";
+"track.cancelReply" = "Отменить ответ";
+"track.attachTimestamp" = "Привязать комментарий к текущему времени";
+"track.timestampAttached" = "Привязано к таймкоду (нажмите для отмены)";
+"track.submitError" = "Ошибка отправки: %@";
+"track.deleteCommentError" = "Не удалось удалить комментарий: %@";
+"track.loadCommentsError" = "Не удалось загрузить комментарии: %@";
+"track.noCommentsYet" = "Комментариев пока нет. Будьте первым!";
+
+/* URL Detail */
+"url.openFailed" = "Не удалось открыть ссылку";
+"url.retry" = "Повторить";
+
+/* User Detail Extras */
+"user.unfollow" = "Отписаться";
+"user.followingStatus" = "Вы подписаны";
+"user.follow" = "Подписаться";
+"user.all" = "Все";
+"user.popular" = "Популярные";
+"user.tracksTab" = "Треки";
+"user.albums" = "Альбомы";
+"user.followersTab" = "Подписчики";
+
+/* Notifications */
+"notifications.title" = "Уведомления";
+"notifications.readAll" = "Прочитать все";
+"notifications.empty" = "Нет уведомлений";
+"notifications.following" = "Вы подписаны";
+"notifications.followBack" = "В ответ";
+"notifications.defaultUser" = "Пользователь";
+"notifications.mentionedYou" = " упомянул(а) вас:";
+"notifications.followedYou" = " подписался на ваши обновления";
+"notifications.likedTrack" = " оценил(а) ваш трек";
+"notifications.sharedTrack" = " поделился вашим треком";
+"notifications.commented" = " оставил(а) комментарий:";
+"notifications.newAction" = " новое действие";
+
+/* Messages */
+"messages.title" = "Сообщения";
+"messages.empty" = "Нет сообщений";
+"messages.defaultPartner" = "Собеседник";
+"messages.setAlias" = "Задать голосовое имя (заметку)";
+"messages.deleteChat" = "Удалить чат";
+"messages.deleteChatConfirmTitle" = "Удалить чат с %@?";
+"messages.noMessages" = "Нет сообщений";
+"messages.justNow" = "только что";
+"messages.minutesAgo" = "%d мин. назад";
+"messages.hoursAgo" = "%d ч. назад";
+"messages.daysAgo" = "%d дн. назад";
+"messages.back" = "Назад";
+"messages.deleteConversation" = "Удалить переписку";
+"messages.noMessagesYet" = "Здесь пока нет сообщений";
+"messages.typeMessage" = "Напишите сообщение...";
+"messages.delete" = "Удалить";
+"messages.deleteConfirm" = "Переписка будет удалена из списка сообщений.";
+"messages.voiceNameFor" = "Голосовое имя для %@";
+"messages.voiceNameHint" = "Используется для команд вида:\n«скинь [имя]», «отправь [имя]», «поделись с [имя]»";
+"messages.enterNamePlaceholder" = "Введите имя (например: Алекс)...";
+"messages.clearName" = "Очистить имя";
+
+/* My Wave */
+"wave.tracksInStream" = "Треки в потоке";
+"wave.personalStream" = "Персональный бесконечный поток";
+"wave.description" = "Непрерывный поток музыки, подобранный под ваши вкусы на основе лайков. Поток не заканчивается — следующие треки добавляются автоматически.";
+"wave.inspiredBy" = "Вдохновлено: %@";
+"wave.inspiredByAndMore" = "Вдохновлено: %@ и ещё %d артистами";
+"wave.listenWave" = "Слушать волну";
+"wave.pauseWave" = "Пауза";
+"wave.refreshStream" = "Обновить поток";
+"wave.pickingTracks" = "Подбираем новые треки в поток...";
+"wave.infiniteStreamHint" = "Поток бесконечен • Новые треки добавляются во время прослушивания";
+"wave.loadMore" = "Загрузить ещё";
+"wave.tuningWave" = "Настраиваем Мою волну под ваши вкусы...";
+"wave.noLikesYet" = "У вас пока нет понравившихся треков";
+"wave.noLikesHint" = "Поставьте лайк нескольким трекам, чтобы алгоритм Моей волны понял ваши музыкальные предпочтения.";
+
+/* Lyrics & Now Playing */
+"lyrics.notFound" = "Текст песни не найден";
+"lyrics.notFoundDescription" = "Для этого трека пока нет текста на Genius.";
+"lyrics.tryAgain" = "Попробовать снова";
+"lyrics.originalWithLang" = "Оригинальный текст (%@)";
+"lyrics.translationWithLang" = "Перевод на %@ с Genius";
+"lyrics.translationNotFound" = "Перевод на %@ не найден на Genius";
+"lyrics.openTranslationOnGenius" = "Открыть перевод на Genius.com";
+"lyrics.openOnGenius" = "Открыть на Genius.com";
+"lyrics.loading" = "Загрузка текста с Genius...";
+"lyrics.sync" = "Синхронизировать";
+"nowPlaying.fullscreen" = "Открыть на весь экран";
+"fullscreen.close" = "Закрыть (Esc)";
+
+/* Player Bar & Queue */
+"player.openPoster" = "Открыть постер трека";
+"player.like" = "Мне нравится";
+"player.repost" = "Сделать репост";
+"player.timedComments" = "Всплывающие комментарии";
+"player.commentMarkers" = "Точки на шкале воспроизведения";
+"player.leaveComment" = "Оставить комментарий к треку";
+"player.shareWithFriend" = "Поделиться треком с другом";
+"player.lyricsGenius" = "Текст песни (Genius)";
+"player.posterMode" = "Режим постера / Скриншоты";
+"player.yourCommentPlaceholder" = "Ваш комментарий...";
+"player.repeatOff" = "Повтор выключен";
+"player.repeatAll" = "Повторять весь плейлист";
+"player.repeatOne" = "Повторять этот трек";
+"player.clickToJump" = "Кликните, чтобы перейти к %@";
+"queue.removeFromQueue" = "Удалить из очереди";
+
+/* Voice Control & HUD */
+"voice.title" = "Голосовое управление";
+"voice.manage" = "Управление голосом";
+"voice.realtimeNotice" = "Команды распознаются на Mac в реальном времени";
+"voice.assistantName" = "Имя ассистента:";
+"voice.nameHint" = "Обращение перед командой (например, «%@ дальше»)";
+"voice.resetNameHelp" = "Сбросить на имя по умолчанию (Sound)";
+"voice.requireWakeWord" = "Требовать обращение:";
+"voice.requireWakeWordHint" = "Выполнять команды только после произнесения имени («%@ ...»)";
+"voice.inputDevice" = "Устройство ввода:";
+"voice.defaultSystem" = "По умолчанию (система)";
+"voice.airPodsNotice" = "Для максимального качества музыки в Bluetooth-наушниках (AirPods) выберите встроенный или USB-микрофон, чтобы наушники не переключались в режим гарнитуры.";
+"voice.language" = "Язык команд:";
+"voice.hudHint" = "Всплывающая подсказка:";
+"voice.hudDescription" = "Капсула с выполненной командой над плеером";
+"voice.availableCommands" = "ДОСТУПНЫЕ КОМАНДЫ";
+"voice.disable" = "Отключить голосовое управление";
+"voice.enable" = "Включить голосовое управление";
+"voice.microphone" = "Микрофон";
+"voice.settings" = "Настройки голосового управления...";
+
+/* Voice Commands Table */
+"voice.cmd.next" = "Следующий трек";
+"voice.cmd.prev" = "Предыдущий трек";
+"voice.cmd.pause" = "Пауза / Стоп";
+"voice.cmd.play" = "Воспроизведение";
+"voice.cmd.wave" = "Моя Волна";
+"voice.cmd.refreshWave" = "Обновить волну";
+"voice.cmd.findTrack" = "Найти и включить трек";
+"voice.cmd.comment" = "Оставить комментарий";
+"voice.cmd.sendFriend" = "Скинуть трек другу";
+"voice.cmd.playLikes" = "Включить лайки";
+"voice.cmd.playReposts" = "Включить репосты";
+"voice.cmd.repost" = "Сделать репост";
+"voice.cmd.unrepost" = "Убрать репост";
+"voice.cmd.like" = "Поставить лайк";
+"voice.cmd.unlike" = "Убрать лайк";
+"voice.cmd.volumeUp" = "Громче";
+"voice.cmd.volumeDown" = "Тише";
+"voice.cmd.mute" = "Без звука";
+"voice.cmd.shuffle" = "Микс / Шафл";
+"voice.cmd.repeat" = "Повтор (по очереди)";
+
+/* Voice HUD feedback */
+"voice.hud.nothingPlaying" = "Сейчас ничего не играет";
+"voice.hud.error" = "Ошибка: %@";
+"voice.hud.sent" = "Отправлено: %@";
+"voice.hud.contactNotFound" = "Контакт не найден: %@";
+"voice.hud.commentError" = "Ошибка комментария";
+"voice.hud.commentAdded" = "Комментарий добавлен";
+"voice.hud.commentPlaceholder" = "Комментарий...";
+"voice.hud.commentPreview" = "Коммент: %@";
+"voice.hud.search" = "Поиск: %@";
+"voice.hud.searchPlaceholder" = "Поиск трека...";
+"voice.hud.sharePlaceholder" = "Кому отправить?...";
+"voice.hud.sharePreview" = "Отправить: %@";
+"voice.hud.cancelled" = "Отменено";
+"voice.hud.listening" = "%@: Слушаю...";
+"voice.hud.shuffleOn" = "Перемешивание вкл";
+"voice.hud.shuffleOff" = "Перемешивание выкл";
+"voice.hud.repeatAll" = "Повтор всех";
+"voice.hud.repeatOne" = "Повтор одного";
+"voice.hud.repeatOff" = "Повтор выключен";
+
+/* Login View */
+"login.embeddedBrowser" = "Встроенный браузер";
+"login.tokenInput" = "Вход по токену / Cookie (Обход капчи)";
+"login.openInBrowser" = "Открыть в браузере";
+"login.captchaNotice" = "Если вы видите сообщение «Доступ временно ограничен» (каптча DataDome), переключитесь на вкладку «Вход по токену / Cookie» вверху.";
+"login.enterTokenButton" = "Ввести токен";
+"login.title" = "Вход в SoundCloud";
+"login.quickLogin" = "Быстрый вход без капчи";
+"login.cloudflareExplanation" = "Так как Cloudflare и DataDome встроили защиту от сторонних браузеров, вы можете пройти вход в вашем обычном Safari / Chrome и просто использовать токен.";
+"login.oauthTokenLabel" = "Токен авторизации (oauth_token)";
+"login.oauthTokenPlaceholder" = "2-XXXXXX-XXXXXXXXXX-XXXXXXXXXXXX";
+"login.datadomeLabel" = "Куки DataDome (datadome) — опционально, для лайков и репостов";
+"login.datadomePlaceholder" = "Значение куки datadome...";
+"login.sessionLabel" = "Куки сессии (_soundcloud_session) — опционально, для подписки Go+";
+"login.sessionPlaceholder" = "Значение куки _soundcloud_session...";
+"login.submitButton" = "Войти в аккаунт";
+"login.enterTokenError" = "Пожалуйста, введите oauth_token";
+"login.openSafariButton" = "Открыть soundcloud.com в Safari";
+"login.guideTitle" = "Как скопировать токен за 10 секунд:";
+"login.guideStep1" = "1. Откройте **soundcloud.com** в браузере (Safari или Chrome) и войдите в свой аккаунт.";
+"login.guideStep2" = "2. Нажмите правой кнопкой мыши в любом месте страницы ➔ **Посмотреть код / Проверить объект (Inspect)**.";
+"login.guideStep3" = "3. Перейдите во вкладку **Application** (или **Хранилище / Хранилище данных** в Safari) ➔ в меню слева выберите **Cookies** ➔ **https://soundcloud.com**.";
+"login.guideStep4" = "4. Найдите строку **oauth_token** и скопируйте значение (начинается с `2-`). Вставьте его в поле выше.";
+"login.guideStep5" = "5. *(Опционально)* Найдите строку **datadome** и скопируйте её для обхода капчи при лайках.";
+
+/* Common & Badges */
+"common.empty" = "Пусто";
+"badge.new" = "NEW";
+
+/* Additional Message Keys */
+"messages.playlistOrAlbum" = "Плейлист / Альбом";
+"messages.track" = "Трек";
+
+/* Player Controls & HUD */
+"player.unmute" = "Включить звук";
+"player.mute" = "Выключить звук";
+"player.commentAtTime" = "На %@";
+"player.commentNoTime" = "Без привязки ко времени";
+"player.hud.trackUnavailable" = "Трек недоступен";
+
+/* Additional Voice HUD & Commands */
+"voice.hud.nothingFound" = "Ничего не найдено";
+"voice.hud.likedTracks" = "Любимые треки";
+"voice.hud.myWave" = "Моя Волна";
+"voice.hud.waveRefreshed" = "Волна обновлена";
+"voice.hud.stream" = "Лента";
+"voice.hud.shareFormat" = "Поделиться: %@";
+"voice.hud.reposted" = "Сделан репост";
+"voice.hud.unreposted" = "Репост удалён";
+"voice.hud.reposts" = "Репосты";
+"voice.hud.unliked" = "Убран лайк";
+"voice.hud.liked" = "Мне нравится";
+"voice.hud.shuffle" = "Перемешать";
+"voice.hud.repeat" = "Повтор";
+
+/* Voice Command Examples in Settings */
+"voice.cmd.next.phrases" = "дальше, след, skip";
+"voice.cmd.prev.phrases" = "назад, прошлый, prev";
+"voice.cmd.pause.phrases" = "пауза, стоп, pause";
+"voice.cmd.play.phrases" = "играть, плей, play";
+"voice.cmd.wave.phrases" = "моя волна, волна";
+"voice.cmd.refreshWave.phrases" = "обнови волну, reload wave";
+"voice.cmd.findTrack.phrases" = "найди [трек], search [track]";
+"voice.cmd.comment.phrases" = "коммент [текст]";
+"voice.cmd.sendFriend.phrases" = "скинь Алексу, send to Alex";
+"voice.cmd.playLikes.phrases" = "лайки, мои лайки";
+"voice.cmd.playReposts.phrases" = "репосты, play reposts";
+"voice.cmd.repost.phrases" = "репост, репостни";
+"voice.cmd.unrepost.phrases" = "убери репост, unrepost";
+"voice.cmd.like.phrases" = "лайк, нравится";
+"voice.cmd.unlike.phrases" = "дизлайк, убери лайк";
+"voice.cmd.volumeUp.phrases" = "громче, прибавь, louder";
+"voice.cmd.volumeDown.phrases" = "тише, убавь, quieter";
+"voice.cmd.mute.phrases" = "без звука, мут, mute";
+"voice.cmd.shuffle.phrases" = "микс, перемешай, shuffle";
+"voice.cmd.repeat.phrases" = "повтор, зацикли, repeat";
+

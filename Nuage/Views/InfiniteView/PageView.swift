@@ -30,7 +30,7 @@ struct PageView<Element: Decodable&Identifiable, ContentView: View>: View {
         Group {
             if let pages = pages {
                 if pages.isEmpty {
-                    Text("Empty")
+                    Text(LocalizedStringKey("common.empty"))
                         .font(.title2)
                         .foregroundColor(.secondary)
                 }
